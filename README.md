@@ -1,2 +1,1 @@
-# ml-ai-final-proje
-asd
+# Makine Öğrenmesi Bootcamp Final Ödevi
