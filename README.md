@@ -74,7 +74,7 @@ Each of these sections provides insights into the dataset's characteristics, dis
 Elbette, aşağıda adım adım "sigorta.csv" veri setini kullanım kılavuzu şeklinde bir README dosyası örneği yer almaktadır. Bu rehberi takip ederek veri setinizi yüklemek, incelemek ve analiz etmek için adım adım ilerleyebilirsiniz.
 
 ---
-## "sigorta.csv" Veri Seti Genel Bakış
+## Genel Bakış
 
 ### Veri Seti Hakkında
 
