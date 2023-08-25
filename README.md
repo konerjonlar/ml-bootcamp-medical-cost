@@ -29,22 +29,11 @@ The dataset used in this project (`insurance.csv`) contains information about in
 
 ## Data Exploration and Analysis
 
-### General Statistics
-
-|     |      age |       bmi |   children |      charges |
-|:---:| --------:| ---------:| ----------:| -----------:|
-| **Count** | 1338 | 1338 | 1338 | 1338 |
-| **Mean** | 39.21 | 30.66 | 1.09 | 13270.42 |
-| **Std** | 14.05 | 6.10 | 1.21 | 12110.01 |
-| **Min** | 18 | 15.96 | 0 | 1121.87 |
-| **25%** | 27 | 26.30 | 0 | 4740.29 |
-| **50% (Median)** | 39 | 30.40 | 1 | 9382.03 |
-| **75%** | 51 | 34.69 | 2 | 16639.91 |
-| **Max** | 64 | 53.13 | 5 | 63770.43 |
-
 
 **Display Columns:**
-This section displays the names of the columns (features) in the dataset.
+
+|     |      age |       bmi |   children |      charges |    sex   |     smoker   |    region   |
+|:---:| --------:| ---------:| ----------:| -----------:| --------:| ---------:| ----------:|
 
 **Data Size:**
 This indicates the dimensions of the dataset, where it has 1338 rows and 7 columns.
@@ -62,13 +51,17 @@ Similarly, this section displays the last 4 rows of the dataset, showing informa
 It states that there are no missing values (null values) in the dataset.
 
 **General Statistics:**
-Here, summary statistics of the dataset are presented:
-- `count`: The number of non-null values in each feature.
-- `mean`: The average value of each feature.
-- `std`: The standard deviation of each feature.
-- `min`: The minimum value of each feature.
-- `25%`, `50%`, `75%`: The quartiles of each feature.
-- `max`: The maximum value of each feature.
+
+|     |      age |       bmi |   children |      charges |
+|:---:| --------:| ---------:| ----------:| -----------:|
+| **Count** | 1338 | 1338 | 1338 | 1338 |
+| **Mean** | 39.21 | 30.66 | 1.09 | 13270.42 |
+| **Std** | 14.05 | 6.10 | 1.21 | 12110.01 |
+| **Min** | 18 | 15.96 | 0 | 1121.87 |
+| **25%** | 27 | 26.30 | 0 | 4740.29 |
+| **50% (Median)** | 39 | 30.40 | 1 | 9382.03 |
+| **75%** | 51 | 34.69 | 2 | 16639.91 |
+| **Max** | 64 | 53.13 | 5 | 63770.43 |
 
 **Children Value Counts:**
 This segment displays the count of each unique value in the 'children' feature. For example, there are 574 individuals with 0 children, 324 with 1 child, 240 with 2 children, 157 with 3 children, 25 with 4 children, and 18 with 5 children.
