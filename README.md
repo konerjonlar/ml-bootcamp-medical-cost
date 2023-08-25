@@ -102,8 +102,7 @@ Each of these sections provides insights into the dataset's characteristics, dis
    - Tune the hyperparameters of the selected model using GridSearchCV.
 
 5. **Model Evaluation:**
-   - Evaluate the optimized model using regression metrics (MSE, MAE, RMSE).Elbette, aşağıda adım adım bir "insurance.csv" veri seti kullanım kılavuzu örneği yer almaktadır. Bu kılavuzu izleyerek veri setini yüklemek, incelemek ve temel analiz adımlarını uygulamak için bir başlangıç yapabilirsiniz.
-
+   - Evaluate the optimized model using regression metrics (MSE, MAE, RMSE).
 ---
 
 ## "insurance.csv" Kullanım Kılavuzu
@@ -211,23 +210,23 @@ Bu adımları takip ederek, "insurance.csv" veri setini yükleyebilir, inceleyeb
 
 ### Veri Seti Hakkında
 
-"insurance.csv" veri seti, sağlık insurancesı maliyetleri hakkında bilgi içeren bir veri setidir. Bu veri seti, insurancelı bireylerin çeşitli özelliklerini ve sağlık insurancesı maliyetlerini içerir. Veri seti, sigara içme alışkanlığı, yaş, cinsiyet, bölge, BMI (Vücut Kitle İndeksi), çocuk sayısı gibi faktörlerin sağlık insurancesı maliyetleri üzerindeki etkilerini anlamak için kullanılabilir.
+"insurance.csv" veri seti, sağlık sigortası maliyetleri hakkında bilgi içeren bir veri setidir. Bu veri seti, sigortalı bireylerin çeşitli özelliklerini ve sağlık sigortası maliyetlerini içerir. Veri seti, sigara içme alışkanlığı, yaş, cinsiyet, bölge, BMI (Vücut Kitle İndeksi), çocuk sayısı gibi faktörlerin sağlık sigortası maliyetleri üzerindeki etkilerini anlamak için kullanılabilir.
 
 ### Veri Setinin İçeriği
 
 Veri seti genellikle aşağıdaki sütunları içerir:
 
-- `age`: insurancelının yaşını temsil eder.
-- `sex`: insurancelının cinsiyetini (kadın veya erkek) gösterir.
-- `bmi`: insurancelının Vücut Kitle İndeksi (BMI) değerini temsil eder.
-- `children`: insurancelının sahip olduğu çocuk sayısını ifade eder.
-- `smoker`: insurancelının sigara içip içmediğini gösterir (yes veya no).
-- `region`: insurancelının yaşadığı bölgeyi temsil eder (kuzeydoğu, kuzeybatı, güneydoğu, güneybatı).
-- `charges`: insurancelının sağlık insurancesı maliyetlerini ifade eder.
+- `age`: sigortalının yaşını temsil eder.
+- `sex`: sigortalının cinsiyetini (kadın veya erkek) gösterir.
+- `bmi`: sigortalının Vücut Kitle İndeksi (BMI) değerini temsil eder.
+- `children`: sigortalının sahip olduğu çocuk sayısını ifade eder.
+- `smoker`: sigortalının sigara içip içmediğini gösterir (yes veya no).
+- `region`: sigortalının yaşadığı bölgeyi temsil eder (kuzeydoğu, kuzeybatı, güneydoğu, güneybatı).
+- `charges`: sigortalının sağlık sigortası maliyetlerini ifade eder.
 
 ### Amaç
 
-Bu veri seti, sağlık insurancesı maliyetlerini etkileyen faktörleri anlamak ve analiz etmek için kullanılabilir. Örneğin, sigara içenlerin insurance maliyetleri sigara içmeyenlere göre nasıl değişiyor? Ya da yaş, cinsiyet, BMI gibi faktörlerin insurance maliyetleri üzerindeki etkileri nelerdir? Bu tür soruları yanıtlamak için veri seti kullanılabilir. aynı zamanda kişinin sağlık insurancesının yaklaşık maliyetini tahmin etmektedir.
+Bu veri seti, sağlık sigortası maliyetlerini etkileyen faktörleri anlamak ve analiz etmek için kullanılabilir. Örneğin, sigara içenlerin sigorta maliyetleri sigara içmeyenlere göre nasıl değişiyor? Ya da yaş, cinsiyet, BMI gibi faktörlerin sigorta maliyetleri üzerindeki etkileri nelerdir? Bu tür soruları yanıtlamak için veri seti kullanılabilir. aynı zamanda kişinin sağlık sigortasının yaklaşık maliyetini tahmin etmektedir.
 
 ---
 
