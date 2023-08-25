@@ -233,7 +233,7 @@ Bu veri seti, sağlık sigortası maliyetlerini etkileyen faktörleri anlamak ve
 ## Authors
 - Orhan Cansu
 - Meryem Arslan
-- Murat Rüzgar
+- Murat Rüzgar Deniz
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
