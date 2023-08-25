@@ -74,105 +74,35 @@ Each of these sections provides insights into the dataset's characteristics, dis
 Elbette, aşağıda adım adım "sigorta.csv" veri setini kullanım kılavuzu şeklinde bir README dosyası örneği yer almaktadır. Bu rehberi takip ederek veri setinizi yüklemek, incelemek ve analiz etmek için adım adım ilerleyebilirsiniz.
 
 ---
-# "sigorta.csv" Veri Seti Kullanım Kılavuzu
+Elbette, "sigorta.csv" veri seti hakkında genel bir bakış sunabilirim:
 
-Bu kılavuz, "sigorta.csv" adlı veri setini kullanarak adım adım veri analizi yapma sürecini açıklar.
+## "sigorta.csv" Veri Seti Genel Bakış
 
-## Adım 1: Veri Setini İndirme ve Yükleme
+### Veri Seti Hakkında
 
-1. [Bu bağlantıya tıklayarak](veri_seti_bağlantısı) "sigorta.csv" veri setini indirin ve bir klasöre kaydedin.
+"sigorta.csv" veri seti, sağlık sigortası maliyetleri hakkında bilgi içeren bir veri setidir. Bu veri seti, sigortalı bireylerin çeşitli özelliklerini ve sağlık sigortası maliyetlerini içerir. Veri seti, sigara içme alışkanlığı, yaş, cinsiyet, bölge, BMI (Vücut Kitle İndeksi), çocuk sayısı gibi faktörlerin sağlık sigortası maliyetleri üzerindeki etkilerini anlamak için kullanılabilir.
 
-2. Python ortamınızı açın ve aşağıdaki kodu kullanarak ilgili kütüphaneleri içe aktarın:
+### Veri Setinin İçeriği
 
-```python
-import pandas as pd
-```
+Veri seti genellikle aşağıdaki sütunları içerir:
 
-3. Veri setini yükleyin:
+- `age`: Sigortalının yaşını temsil eder.
+- `sex`: Sigortalının cinsiyetini (kadın veya erkek) gösterir.
+- `bmi`: Sigortalının Vücut Kitle İndeksi (BMI) değerini temsil eder.
+- `children`: Sigortalının sahip olduğu çocuk sayısını ifade eder.
+- `smoker`: Sigortalının sigara içip içmediğini gösterir (yes veya no).
+- `region`: Sigortalının yaşadığı bölgeyi temsil eder (kuzeydoğu, kuzeybatı, güneydoğu, güneybatı).
+- `charges`: Sigortalının sağlık sigortası maliyetlerini ifade eder.
 
-```python
-data = pd.read_csv("sigorta.csv")
-```
+### Amaç
 
-## Adım 2: Veri Setini İnceleme
+Bu veri seti, sağlık sigortası maliyetlerini etkileyen faktörleri anlamak ve analiz etmek için kullanılabilir. Örneğin, sigara içenlerin sigorta maliyetleri sigara içmeyenlere göre nasıl değişiyor? Ya da yaş, cinsiyet, BMI gibi faktörlerin sigorta maliyetleri üzerindeki etkileri nelerdir? Bu tür soruları yanıtlamak için veri seti kullanılabilir.
 
-1. Veri setinin ilk birkaç satırını görüntülemek için:
+### Veri Kaynağı ve Lisans
 
-```python
-print(data.head())
-```
+"sigorta.csv" veri setinin tam olarak hangi kaynaktan geldiğini veya hangi lisansa tabi olduğunu belirtmediğinizi gözlemledim. Eğer veri setinin kaynağı veya lisansı hakkında bilgi almak isterseniz, veri setini oluşturan kaynağa veya veri sağlayıcıya başvurmanız gerekmektedir.
 
-2. Veri setinin sütunlarını ve veri tiplerini görüntülemek için:
-
-```python
-print(data.info())
-```
-
-3. Veri setinin temel istatistiklerini almak için:
-
-```python
-print(data.describe())
-```
-
-## Adım 3: Temel Veri Analizi
-
-1. "BMI" dağılımını incelemek için:
-
-```python
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-plt.figure(figsize=(10, 6))
-sns.histplot(data['bmi'], bins=20, kde=True)
-plt.title('BMI Dağılımı')
-plt.xlabel('BMI')
-plt.ylabel('Frekans')
-plt.show()
-```
-
-2. "Sigara içen" bireylerin "suçlamalar" ile ilişkisini incelemek için:
-
-```python
-plt.figure(figsize=(10, 6))
-sns.scatterplot(x='charges', y='smoker', data=data)
-plt.title('Sigara İçen ve Suçlamalar İlişkisi')
-plt.xlabel('Suçlamalar')
-plt.ylabel('Sigara İçen (0: Hayır, 1: Evet)')
-plt.show()
-```
-
-3. "Sigara içen" ve "bölge" arasındaki ilişkiyi görselleştirmek için:
-
-```python
-plt.figure(figsize=(10, 6))
-sns.countplot(x='region', hue='smoker', data=data)
-plt.title('Sigara İçme Durumu ve Bölgeler')
-plt.xlabel('Bölge')
-plt.ylabel('Birey Sayısı')
-plt.legend(title='Sigara İçen')
-plt.show()
-```
-
-4. "BMI" ve "cinsiyet" arasındaki ilişkiyi incelemek için:
-
-```python
-plt.figure(figsize=(10, 6))
-sns.boxplot(x='sex', y='bmi', data=data)
-plt.title('BMI ve Cinsiyet İlişkisi')
-plt.xlabel('Cinsiyet')
-plt.ylabel('BMI')
-plt.show()
-```
-
-5. En çok "çocuk"un bulunduğu "bölgeyi" belirlemek için:
-
-```python
-most_children_region = data.groupby('region')['children'].sum().idxmax()
-print(f'En çok çocuğun bulunduğu bölge: {most_children_region}')
-```
-
-Bu kılavuz, "sigorta.csv" veri setini yükleme, inceleme ve temel veri analizi adımlarını adım adım açıklar. Bu adımları izleyerek veri setiniz hakkında daha fazla bilgi edinebilir ve analizler yapabilirsiniz.
-
+Bu genel bakış, "sigorta.csv" veri seti hakkında temel bilgiler sağlamaktadır. Eğer projenizde bu veri setini kullanmayı planlıyorsanız, analizlerinizde ve sonuçlarınızda bu faktörleri dikkate alabilirsiniz.
 ## Analysis Steps
 1. **Exploratory Data Analysis (EDA):**
    - Examine the distribution of BMI.
