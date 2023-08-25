@@ -104,6 +104,8 @@ Elbette, aşağıda adım adım "sigorta.csv" veri setini kullanım kılavuzu ş
 5. **Model Evaluation:**
    - Evaluate the optimized model using regression metrics (MSE, MAE, RMSE).Elbette, aşağıda adım adım bir "sigorta.csv" veri seti kullanım kılavuzu örneği yer almaktadır. Bu kılavuzu izleyerek veri setini yüklemek, incelemek ve temel analiz adımlarını uygulamak için bir başlangıç yapabilirsiniz.
 
+---
+
 ## "sigorta.csv" Kullanım Kılavuzu
 
 Bu kılavuz, "sigorta.csv" adlı veri setini kullanarak adım adım nasıl temel veri analizi yapabileceğinizi göstermektedir.
@@ -203,6 +205,8 @@ print(f'En çok çocuğun bulunduğu bölge: {most_children_region}')
 
 Bu adımları takip ederek, "sigorta.csv" veri setini yükleyebilir, inceleyebilir ve temel veri analizi adımlarını uygulayabilirsiniz. Bu kılavuz, veri setinizi daha iyi anlamak ve önemli özellikleri keşfetmek için başlangıç ​​noktanız olabilir.
 
+---
+
 ## Genel Bakış
 
 ### Veri Seti Hakkında
@@ -220,6 +224,8 @@ Veri seti genellikle aşağıdaki sütunları içerir:
 - `smoker`: Sigortalının sigara içip içmediğini gösterir (yes veya no).
 - `region`: Sigortalının yaşadığı bölgeyi temsil eder (kuzeydoğu, kuzeybatı, güneydoğu, güneybatı).
 - `charges`: Sigortalının sağlık sigortası maliyetlerini ifade eder.
+
+---
 
 ### Amaç
 
