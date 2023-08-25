@@ -29,6 +29,20 @@ The dataset used in this project (`insurance.csv`) contains information about in
 
 ## Data Exploration and Analysis
 
+### General Statistics
+
+|     |      age |       bmi |   children |      charges |
+|:---:| --------:| ---------:| ----------:| -----------:|
+| **Count** | 1338 | 1338 | 1338 | 1338 |
+| **Mean** | 39.21 | 30.66 | 1.09 | 13270.42 |
+| **Std** | 14.05 | 6.10 | 1.21 | 12110.01 |
+| **Min** | 18 | 15.96 | 0 | 1121.87 |
+| **25%** | 27 | 26.30 | 0 | 4740.29 |
+| **50% (Median)** | 39 | 30.40 | 1 | 9382.03 |
+| **75%** | 51 | 34.69 | 2 | 16639.91 |
+| **Max** | 64 | 53.13 | 5 | 63770.43 |
+
+
 **Display Columns:**
 This section displays the names of the columns (features) in the dataset.
 
