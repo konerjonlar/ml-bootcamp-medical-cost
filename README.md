@@ -125,11 +125,6 @@ Veri seti genellikle aşağıdaki sütunları içerir:
 
 Bu veri seti, sağlık sigortası maliyetlerini etkileyen faktörleri anlamak ve analiz etmek için kullanılabilir. Örneğin, sigara içenlerin sigorta maliyetleri sigara içmeyenlere göre nasıl değişiyor? Ya da yaş, cinsiyet, BMI gibi faktörlerin sigorta maliyetleri üzerindeki etkileri nelerdir? Bu tür soruları yanıtlamak için veri seti kullanılabilir.
 
-### Veri Kaynağı ve Lisans
-
-"sigorta.csv" veri setinin tam olarak hangi kaynaktan geldiğini veya hangi lisansa tabi olduğunu belirtmediğinizi gözlemledim. Eğer veri setinin kaynağı veya lisansı hakkında bilgi almak isterseniz, veri setini oluşturan kaynağa veya veri sağlayıcıya başvurmanız gerekmektedir.
-
-Bu genel bakış, "sigorta.csv" veri seti hakkında temel bilgiler sağlamaktadır. Eğer projenizde bu veri setini kullanmayı planlıyorsanız, analizlerinizde ve sonuçlarınızda bu faktörleri dikkate alabilirsiniz.
 ## Authors
 - Orhan Cansu
 - Meryem Arslan
