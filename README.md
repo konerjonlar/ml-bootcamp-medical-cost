@@ -233,6 +233,7 @@ The dataset typically includes the following columns:
 ### Purpose
 
 This dataset can be used to understand and analyze factors influencing health insurance costs. For example, how do insurance costs differ between smokers and non-smokers? What is the impact of age, gender, BMI, etc., on insurance costs? This dataset can help answer such questions and assist in predicting approximate health insurance costs.
+
 ---
 
 ## Authors
