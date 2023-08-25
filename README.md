@@ -111,50 +111,49 @@ Each of these sections provides insights into the dataset's characteristics, dis
 5. **Model Evaluation:**
    - Evaluate the optimized model using regression metrics (MSE, MAE, RMSE).
 ---
+## "insurance.csv" Usage Guide
 
-## "insurance.csv" Kullanım Kılavuzu
+This guide demonstrates step-by-step how to perform basic data analysis using the "insurance.csv" dataset.
 
-Bu kılavuz, "insurance.csv" adlı veri setini kullanarak adım adım nasıl temel veri analizi yapabileceğinizi göstermektedir.
+### Step 1: Loading the Dataset
 
-### Adım 1: Veri Setini Yüklemek
-
-1. Öncelikle, Python programlama dilini kullanabilmek için bir Python ortamına sahip olduğunuzdan emin olun.
-2. "insurance.csv" adlı veri setini indirin ve belirli bir klasöre kaydedin.
-3. İlgili Python kütüphanelerini içe aktarın:
+1. Firstly, ensure that you have a Python environment set up to use the Python programming language.
+2. Download the "insurance.csv" dataset and save it to a specific folder.
+3. Import the necessary Python libraries:
 
 ```python
 import pandas as pd
 ```
 
-4. Veri setini yükleyin:
+4. Load the dataset:
 
 ```python
 data = pd.read_csv("insurance.csv")
 ```
 
-### Adım 2: Veri Setini İncelemek
+### Step 2: Exploring the Dataset
 
-1. Veri setinin ilk birkaç satırını görmek için:
+1. To see the first few rows of the dataset:
 
 ```python
 print(data.head())
 ```
 
-2. Veri setinin sütunlarını ve veri tiplerini görüntülemek için:
+2. To view the columns and data types of the dataset:
 
 ```python
 print(data.info())
 ```
 
-3. Veri setinin özet istatistiklerini almak için:
+3. To obtain summary statistics of the dataset:
 
 ```python
 print(data.describe())
 ```
 
-### Adım 3: Temel Veri Analizi
+### Step 3: Basic Data Analysis
 
-1. "BMI" sütununun dağılımını incelemek için:
+1. To examine the distribution of the "BMI" column:
 
 ```python
 import matplotlib.pyplot as plt
@@ -162,80 +161,78 @@ import seaborn as sns
 
 plt.figure(figsize=(10, 6))
 sns.histplot(data['bmi'], bins=20, kde=True)
-plt.title('BMI Dağılımı')
+plt.title('BMI Distribution')
 plt.xlabel('BMI')
-plt.ylabel('Frekans')
+plt.ylabel('Frequency')
 plt.show()
 ```
 
-2. "Sigara içen" bireylerin "suçlamalar" ile ilişkisini incelemek için:
+2. To investigate the relationship between "smoker" individuals and "charges":
 
 ```python
 plt.figure(figsize=(10, 6))
 sns.scatterplot(x='charges', y='smoker', data=data)
-plt.title('Sigara İçen ve Suçlamalar İlişkisi')
-plt.xlabel('Suçlamalar')
-plt.ylabel('Sigara İçen (0: Hayır, 1: Evet)')
+plt.title('Smoker and Charges Relationship')
+plt.xlabel('Charges')
+plt.ylabel('Smoker (0: No, 1: Yes)')
 plt.show()
 ```
 
-3. "Sigara içen" ve "bölge" arasındaki ilişkiyi incelemek için:
+3. To explore the relationship between "smoker" and "region":
 
 ```python
 plt.figure(figsize=(10, 6))
 sns.countplot(x='region', hue='smoker', data=data)
-plt.title('Sigara İçme Durumu ve Bölgeler')
-plt.xlabel('Bölge')
-plt.ylabel('Birey Sayısı')
-plt.legend(title='Sigara İçen')
+plt.title('Smoker Status and Regions')
+plt.xlabel('Region')
+plt.ylabel('Number of Individuals')
+plt.legend(title='Smoker')
 plt.show()
 ```
 
-4. "BMI" ve "cinsiyet" arasındaki ilişkiyi analiz etmek için:
+4. To analyze the relationship between "BMI" and "sex":
 
 ```python
 plt.figure(figsize=(10, 6))
 sns.boxplot(x='sex', y='bmi', data=data)
-plt.title('BMI ve Cinsiyet İlişkisi')
-plt.xlabel('Cinsiyet')
+plt.title('BMI and Sex Relationship')
+plt.xlabel('Sex')
 plt.ylabel('BMI')
 plt.show()
 ```
 
-5. En çok "çocuk"un bulunduğu "bölgeyi" belirlemek için:
+5. To determine the region with the most children:
 
 ```python
 most_children_region = data.groupby('region')['children'].sum().idxmax()
-print(f'En çok çocuğun bulunduğu bölge: {most_children_region}')
+print(f'Region with the most children: {most_children_region}')
 ```
 
-Bu adımları takip ederek, "insurance.csv" veri setini yükleyebilir, inceleyebilir ve temel veri analizi adımlarını uygulayabilirsiniz. Bu kılavuz, veri setinizi daha iyi anlamak ve önemli özellikleri keşfetmek için başlangıç ​​noktanız olabilir.
+By following these steps, you can load, explore, and perform basic data analysis on the "insurance.csv" dataset. This guide can serve as a starting point for better understanding your dataset and uncovering important features.
 
 ---
 
-## Genel Bakış
+## General Overview
 
-### Veri Seti Hakkında
+### About the Dataset
 
-"insurance.csv" veri seti, sağlık sigortası maliyetleri hakkında bilgi içeren bir veri setidir. Bu veri seti, sigortalı bireylerin çeşitli özelliklerini ve sağlık sigortası maliyetlerini içerir. Veri seti, sigara içme alışkanlığı, yaş, cinsiyet, bölge, BMI (Vücut Kitle İndeksi), çocuk sayısı gibi faktörlerin sağlık sigortası maliyetleri üzerindeki etkilerini anlamak için kullanılabilir.
+The "insurance.csv" dataset contains information about health insurance costs. It includes various attributes of insured individuals along with their associated healthcare charges. This dataset covers factors such as smoking habits, age, gender, region, BMI (Body Mass Index), and number of children, which can impact health insurance costs.
 
-### Veri Setinin İçeriği
+### Dataset Contents
 
-Veri seti genellikle aşağıdaki sütunları içerir:
+The dataset typically includes the following columns:
 
-- `age`: sigortalının yaşını temsil eder.
-- `sex`: sigortalının cinsiyetini (kadın veya erkek) gösterir.
-- `bmi`: sigortalının Vücut Kitle İndeksi (BMI) değerini temsil eder.
-- `children`: sigortalının sahip olduğu çocuk sayısını ifade eder.
-- `smoker`: sigortalının sigara içip içmediğini gösterir (yes veya no).
-- `region`: sigortalının yaşadığı bölgeyi temsil eder (kuzeydoğu, kuzeybatı, güneydoğu, güneybatı).
-- `charges`: sigortalının sağlık sigortası maliyetlerini ifade eder.
+- `age`: Represents the age of the insured individual.
+- `sex`: Indicates the gender of the insured individual (female or male).
+- `bmi`: Represents the Body Mass Index (BMI) of the insured individual.
+- `children`: Indicates the number of children the insured individual has.
+- `smoker`: Indicates whether the insured individual is a smoker or not (yes or no).
+- `region`: Represents the region where the insured individual resides (northeast, northwest, southeast, southwest).
+- `charges`: Represents the healthcare charges of the insured individual.
 
-### Amaç
+### Purpose
 
-Bu veri seti, sağlık sigortası maliyetlerini etkileyen faktörleri anlamak ve analiz etmek için kullanılabilir. Örneğin, sigara içenlerin sigorta maliyetleri sigara içmeyenlere göre nasıl değişiyor? Ya da yaş, cinsiyet, BMI gibi faktörlerin sigorta maliyetleri üzerindeki etkileri nelerdir? Bu tür soruları yanıtlamak için veri seti kullanılabilir. aynı zamanda kişinin sağlık sigortasının yaklaşık maliyetini tahmin etmektedir.
-
----
+This dataset can be used to understand and analyze factors influencing health insurance costs. For example, how do insurance costs differ between smokers and non-smokers? What is the impact of age, gender, BMI, etc., on insurance costs? This dataset can help answer such questions and assist in predicting approximate health insurance costs.---
 
 ## Authors
 - Orhan Cansu
