@@ -225,11 +225,11 @@ Veri seti genellikle aşağıdaki sütunları içerir:
 - `region`: Sigortalının yaşadığı bölgeyi temsil eder (kuzeydoğu, kuzeybatı, güneydoğu, güneybatı).
 - `charges`: Sigortalının sağlık sigortası maliyetlerini ifade eder.
 
----
-
 ### Amaç
 
 Bu veri seti, sağlık sigortası maliyetlerini etkileyen faktörleri anlamak ve analiz etmek için kullanılabilir. Örneğin, sigara içenlerin sigorta maliyetleri sigara içmeyenlere göre nasıl değişiyor? Ya da yaş, cinsiyet, BMI gibi faktörlerin sigorta maliyetleri üzerindeki etkileri nelerdir? Bu tür soruları yanıtlamak için veri seti kullanılabilir.
+
+---
 
 ## Authors
 - Orhan Cansu
