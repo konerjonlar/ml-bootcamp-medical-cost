@@ -74,6 +74,106 @@ Each of these sections provides insights into the dataset's characteristics, dis
 Elbette, aşağıda adım adım "sigorta.csv" veri setini kullanım kılavuzu şeklinde bir README dosyası örneği yer almaktadır. Bu rehberi takip ederek veri setinizi yüklemek, incelemek ve analiz etmek için adım adım ilerleyebilirsiniz.
 
 ---
+Elbette, aşağıda adım adım bir "sigorta.csv" veri seti kullanım kılavuzu örneği yer almaktadır. Bu kılavuzu izleyerek veri setini yüklemek, incelemek ve temel analiz adımlarını uygulamak için bir başlangıç yapabilirsiniz.
+
+## "sigorta.csv" Kullanım Kılavuzu
+
+Bu kılavuz, "sigorta.csv" adlı veri setini kullanarak adım adım nasıl temel veri analizi yapabileceğinizi göstermektedir.
+
+### Adım 1: Veri Setini Yüklemek
+
+1. Öncelikle, Python programlama dilini kullanabilmek için bir Python ortamına sahip olduğunuzdan emin olun.
+2. "sigorta.csv" adlı veri setini indirin ve belirli bir klasöre kaydedin.
+3. İlgili Python kütüphanelerini içe aktarın:
+
+```python
+import pandas as pd
+```
+
+4. Veri setini yükleyin:
+
+```python
+data = pd.read_csv("sigorta.csv")
+```
+
+### Adım 2: Veri Setini İncelemek
+
+1. Veri setinin ilk birkaç satırını görmek için:
+
+```python
+print(data.head())
+```
+
+2. Veri setinin sütunlarını ve veri tiplerini görüntülemek için:
+
+```python
+print(data.info())
+```
+
+3. Veri setinin özet istatistiklerini almak için:
+
+```python
+print(data.describe())
+```
+
+### Adım 3: Temel Veri Analizi
+
+1. "BMI" sütununun dağılımını incelemek için:
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.figure(figsize=(10, 6))
+sns.histplot(data['bmi'], bins=20, kde=True)
+plt.title('BMI Dağılımı')
+plt.xlabel('BMI')
+plt.ylabel('Frekans')
+plt.show()
+```
+
+2. "Sigara içen" bireylerin "suçlamalar" ile ilişkisini incelemek için:
+
+```python
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x='charges', y='smoker', data=data)
+plt.title('Sigara İçen ve Suçlamalar İlişkisi')
+plt.xlabel('Suçlamalar')
+plt.ylabel('Sigara İçen (0: Hayır, 1: Evet)')
+plt.show()
+```
+
+3. "Sigara içen" ve "bölge" arasındaki ilişkiyi incelemek için:
+
+```python
+plt.figure(figsize=(10, 6))
+sns.countplot(x='region', hue='smoker', data=data)
+plt.title('Sigara İçme Durumu ve Bölgeler')
+plt.xlabel('Bölge')
+plt.ylabel('Birey Sayısı')
+plt.legend(title='Sigara İçen')
+plt.show()
+```
+
+4. "BMI" ve "cinsiyet" arasındaki ilişkiyi analiz etmek için:
+
+```python
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='sex', y='bmi', data=data)
+plt.title('BMI ve Cinsiyet İlişkisi')
+plt.xlabel('Cinsiyet')
+plt.ylabel('BMI')
+plt.show()
+```
+
+5. En çok "çocuk"un bulunduğu "bölgeyi" belirlemek için:
+
+```python
+most_children_region = data.groupby('region')['children'].sum().idxmax()
+print(f'En çok çocuğun bulunduğu bölge: {most_children_region}')
+```
+
+Bu adımları takip ederek, "sigorta.csv" veri setini yükleyebilir, inceleyebilir ve temel veri analizi adımlarını uygulayabilirsiniz. Bu kılavuz, veri setinizi daha iyi anlamak ve önemli özellikleri keşfetmek için başlangıç ​​noktanız olabilir.
 
 ## Analysis Steps
 1. **Exploratory Data Analysis (EDA):**
