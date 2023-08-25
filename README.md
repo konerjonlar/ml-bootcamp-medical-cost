@@ -71,7 +71,7 @@ Each of these sections provides insights into the dataset's characteristics, dis
 ## Project Structure
 - `insurance_prediction.ipynb`: Jupyter Notebook containing the end-to-end data science pipeline.
 - `insurance.csv`: Dataset used for the analysis and modeling.
-Elbette, aşağıda adım adım "sigorta.csv" veri setini kullanım kılavuzu şeklinde bir README dosyası örneği yer almaktadır. Bu rehberi takip ederek veri setinizi yüklemek, incelemek ve analiz etmek için adım adım ilerleyebilirsiniz.
+
 
 ---
 
