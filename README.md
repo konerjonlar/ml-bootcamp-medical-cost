@@ -74,33 +74,7 @@ Each of these sections provides insights into the dataset's characteristics, dis
 Elbette, aşağıda adım adım "sigorta.csv" veri setini kullanım kılavuzu şeklinde bir README dosyası örneği yer almaktadır. Bu rehberi takip ederek veri setinizi yüklemek, incelemek ve analiz etmek için adım adım ilerleyebilirsiniz.
 
 ---
-## Genel Bakış
 
-### Veri Seti Hakkında
-
-"sigorta.csv" veri seti, sağlık sigortası maliyetleri hakkında bilgi içeren bir veri setidir. Bu veri seti, sigortalı bireylerin çeşitli özelliklerini ve sağlık sigortası maliyetlerini içerir. Veri seti, sigara içme alışkanlığı, yaş, cinsiyet, bölge, BMI (Vücut Kitle İndeksi), çocuk sayısı gibi faktörlerin sağlık sigortası maliyetleri üzerindeki etkilerini anlamak için kullanılabilir.
-
-### Veri Setinin İçeriği
-
-Veri seti genellikle aşağıdaki sütunları içerir:
-
-- `age`: Sigortalının yaşını temsil eder.
-- `sex`: Sigortalının cinsiyetini (kadın veya erkek) gösterir.
-- `bmi`: Sigortalının Vücut Kitle İndeksi (BMI) değerini temsil eder.
-- `children`: Sigortalının sahip olduğu çocuk sayısını ifade eder.
-- `smoker`: Sigortalının sigara içip içmediğini gösterir (yes veya no).
-- `region`: Sigortalının yaşadığı bölgeyi temsil eder (kuzeydoğu, kuzeybatı, güneydoğu, güneybatı).
-- `charges`: Sigortalının sağlık sigortası maliyetlerini ifade eder.
-
-### Amaç
-
-Bu veri seti, sağlık sigortası maliyetlerini etkileyen faktörleri anlamak ve analiz etmek için kullanılabilir. Örneğin, sigara içenlerin sigorta maliyetleri sigara içmeyenlere göre nasıl değişiyor? Ya da yaş, cinsiyet, BMI gibi faktörlerin sigorta maliyetleri üzerindeki etkileri nelerdir? Bu tür soruları yanıtlamak için veri seti kullanılabilir.
-
-### Veri Kaynağı ve Lisans
-
-"sigorta.csv" veri setinin tam olarak hangi kaynaktan geldiğini veya hangi lisansa tabi olduğunu belirtmediğinizi gözlemledim. Eğer veri setinin kaynağı veya lisansı hakkında bilgi almak isterseniz, veri setini oluşturan kaynağa veya veri sağlayıcıya başvurmanız gerekmektedir.
-
-Bu genel bakış, "sigorta.csv" veri seti hakkında temel bilgiler sağlamaktadır. Eğer projenizde bu veri setini kullanmayı planlıyorsanız, analizlerinizde ve sonuçlarınızda bu faktörleri dikkate alabilirsiniz.
 ## Analysis Steps
 1. **Exploratory Data Analysis (EDA):**
    - Examine the distribution of BMI.
@@ -129,7 +103,33 @@ Bu genel bakış, "sigorta.csv" veri seti hakkında temel bilgiler sağlamaktad�
 
 5. **Model Evaluation:**
    - Evaluate the optimized model using regression metrics (MSE, MAE, RMSE).
+## Genel Bakış
 
+### Veri Seti Hakkında
+
+"sigorta.csv" veri seti, sağlık sigortası maliyetleri hakkında bilgi içeren bir veri setidir. Bu veri seti, sigortalı bireylerin çeşitli özelliklerini ve sağlık sigortası maliyetlerini içerir. Veri seti, sigara içme alışkanlığı, yaş, cinsiyet, bölge, BMI (Vücut Kitle İndeksi), çocuk sayısı gibi faktörlerin sağlık sigortası maliyetleri üzerindeki etkilerini anlamak için kullanılabilir.
+
+### Veri Setinin İçeriği
+
+Veri seti genellikle aşağıdaki sütunları içerir:
+
+- `age`: Sigortalının yaşını temsil eder.
+- `sex`: Sigortalının cinsiyetini (kadın veya erkek) gösterir.
+- `bmi`: Sigortalının Vücut Kitle İndeksi (BMI) değerini temsil eder.
+- `children`: Sigortalının sahip olduğu çocuk sayısını ifade eder.
+- `smoker`: Sigortalının sigara içip içmediğini gösterir (yes veya no).
+- `region`: Sigortalının yaşadığı bölgeyi temsil eder (kuzeydoğu, kuzeybatı, güneydoğu, güneybatı).
+- `charges`: Sigortalının sağlık sigortası maliyetlerini ifade eder.
+
+### Amaç
+
+Bu veri seti, sağlık sigortası maliyetlerini etkileyen faktörleri anlamak ve analiz etmek için kullanılabilir. Örneğin, sigara içenlerin sigorta maliyetleri sigara içmeyenlere göre nasıl değişiyor? Ya da yaş, cinsiyet, BMI gibi faktörlerin sigorta maliyetleri üzerindeki etkileri nelerdir? Bu tür soruları yanıtlamak için veri seti kullanılabilir.
+
+### Veri Kaynağı ve Lisans
+
+"sigorta.csv" veri setinin tam olarak hangi kaynaktan geldiğini veya hangi lisansa tabi olduğunu belirtmediğinizi gözlemledim. Eğer veri setinin kaynağı veya lisansı hakkında bilgi almak isterseniz, veri setini oluşturan kaynağa veya veri sağlayıcıya başvurmanız gerekmektedir.
+
+Bu genel bakış, "sigorta.csv" veri seti hakkında temel bilgiler sağlamaktadır. Eğer projenizde bu veri setini kullanmayı planlıyorsanız, analizlerinizde ve sonuçlarınızda bu faktörleri dikkate alabilirsiniz.
 ## Authors
 - Orhan Cansu
 - Meryem Arslan
