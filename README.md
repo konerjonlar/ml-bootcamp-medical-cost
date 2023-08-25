@@ -74,7 +74,35 @@ Each of these sections provides insights into the dataset's characteristics, dis
 Elbette, aşağıda adım adım "sigorta.csv" veri setini kullanım kılavuzu şeklinde bir README dosyası örneği yer almaktadır. Bu rehberi takip ederek veri setinizi yüklemek, incelemek ve analiz etmek için adım adım ilerleyebilirsiniz.
 
 ---
-Elbette, aşağıda adım adım bir "sigorta.csv" veri seti kullanım kılavuzu örneği yer almaktadır. Bu kılavuzu izleyerek veri setini yüklemek, incelemek ve temel analiz adımlarını uygulamak için bir başlangıç yapabilirsiniz.
+
+## Analysis Steps
+1. **Exploratory Data Analysis (EDA):**
+   - Examine the distribution of BMI.
+   - Investigate the relationship between "smoker" and "charges".
+   - Explore the relationship between "smoker" and "region".
+   - Analyze the connection between "bmi" and "sex".
+   - Identify the "region" with the most "children".
+   - Study the relationship between "age" and "bmi".
+   - Explore the correlation between "bmi" and "children".
+   - Check for outliers in the "bmi" variable.
+   - Examine the relationship between "bmi" and "charges".
+   - Visualize the relationship between "region", "smoker", and "bmi" using a bar plot.
+
+2. **Data Preprocessing:**
+   - Perform Label Encoding and One-Hot Encoding for categorical variables.
+   - Split the dataset into training and testing sets.
+   - Scale the features using Standard Scaling.
+
+3. **Model Selection:**
+   - Choose regression models (Linear Regression, Random Forest Regressor, SVR).
+   - Train the models using the preprocessed data.
+   - Evaluate the models using cross-validation.
+
+4. **Hyperparameter Optimization:**
+   - Tune the hyperparameters of the selected model using GridSearchCV.
+
+5. **Model Evaluation:**
+   - Evaluate the optimized model using regression metrics (MSE, MAE, RMSE).Elbette, aşağıda adım adım bir "sigorta.csv" veri seti kullanım kılavuzu örneği yer almaktadır. Bu kılavuzu izleyerek veri setini yüklemek, incelemek ve temel analiz adımlarını uygulamak için bir başlangıç yapabilirsiniz.
 
 ## "sigorta.csv" Kullanım Kılavuzu
 
@@ -175,34 +203,6 @@ print(f'En çok çocuğun bulunduğu bölge: {most_children_region}')
 
 Bu adımları takip ederek, "sigorta.csv" veri setini yükleyebilir, inceleyebilir ve temel veri analizi adımlarını uygulayabilirsiniz. Bu kılavuz, veri setinizi daha iyi anlamak ve önemli özellikleri keşfetmek için başlangıç ​​noktanız olabilir.
 
-## Analysis Steps
-1. **Exploratory Data Analysis (EDA):**
-   - Examine the distribution of BMI.
-   - Investigate the relationship between "smoker" and "charges".
-   - Explore the relationship between "smoker" and "region".
-   - Analyze the connection between "bmi" and "sex".
-   - Identify the "region" with the most "children".
-   - Study the relationship between "age" and "bmi".
-   - Explore the correlation between "bmi" and "children".
-   - Check for outliers in the "bmi" variable.
-   - Examine the relationship between "bmi" and "charges".
-   - Visualize the relationship between "region", "smoker", and "bmi" using a bar plot.
-
-2. **Data Preprocessing:**
-   - Perform Label Encoding and One-Hot Encoding for categorical variables.
-   - Split the dataset into training and testing sets.
-   - Scale the features using Standard Scaling.
-
-3. **Model Selection:**
-   - Choose regression models (Linear Regression, Random Forest Regressor, SVR).
-   - Train the models using the preprocessed data.
-   - Evaluate the models using cross-validation.
-
-4. **Hyperparameter Optimization:**
-   - Tune the hyperparameters of the selected model using GridSearchCV.
-
-5. **Model Evaluation:**
-   - Evaluate the optimized model using regression metrics (MSE, MAE, RMSE).
 ## Genel Bakış
 
 ### Veri Seti Hakkında
