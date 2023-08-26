@@ -111,6 +111,30 @@ Each of these sections provides insights into the dataset's characteristics, dis
 5. **Model Evaluation:**
    - Evaluate the optimized model using regression metrics (MSE, MAE, RMSE).
 ---
+## General Overview
+
+### About the Dataset
+
+The "insurance.csv" dataset contains information about health insurance costs. It includes various attributes of insured individuals along with their associated healthcare charges. This dataset covers factors such as smoking habits, age, gender, region, BMI (Body Mass Index), and number of children, which can impact health insurance costs.
+
+### Dataset Contents
+
+The dataset typically includes the following columns:
+
+- `age`: Represents the age of the insured individual.
+- `sex`: Indicates the gender of the insured individual (female or male).
+- `bmi`: Represents the Body Mass Index (BMI) of the insured individual.
+- `children`: Indicates the number of children the insured individual has.
+- `smoker`: Indicates whether the insured individual is a smoker or not (yes or no).
+- `region`: Represents the region where the insured individual resides (northeast, northwest, southeast, southwest).
+- `charges`: Represents the healthcare charges of the insured individual.
+
+### Purpose
+
+This dataset can be used to understand and analyze factors influencing health insurance costs. For example, how do insurance costs differ between smokers and non-smokers? What is the impact of age, gender, BMI, etc., on insurance costs? This dataset can help answer such questions and assist in predicting approximate health insurance costs.
+
+---
+
 ## "insurance.csv" Usage Guide
 
 This guide demonstrates step-by-step how to perform basic data analysis using the "insurance.csv" dataset.
@@ -209,30 +233,6 @@ print(f'Region with the most children: {most_children_region}')
 ```
 
 By following these steps, you can load, explore, and perform basic data analysis on the "insurance.csv" dataset. This guide can serve as a starting point for better understanding your dataset and uncovering important features.
-
----
-
-## General Overview
-
-### About the Dataset
-
-The "insurance.csv" dataset contains information about health insurance costs. It includes various attributes of insured individuals along with their associated healthcare charges. This dataset covers factors such as smoking habits, age, gender, region, BMI (Body Mass Index), and number of children, which can impact health insurance costs.
-
-### Dataset Contents
-
-The dataset typically includes the following columns:
-
-- `age`: Represents the age of the insured individual.
-- `sex`: Indicates the gender of the insured individual (female or male).
-- `bmi`: Represents the Body Mass Index (BMI) of the insured individual.
-- `children`: Indicates the number of children the insured individual has.
-- `smoker`: Indicates whether the insured individual is a smoker or not (yes or no).
-- `region`: Represents the region where the insured individual resides (northeast, northwest, southeast, southwest).
-- `charges`: Represents the healthcare charges of the insured individual.
-
-### Purpose
-
-This dataset can be used to understand and analyze factors influencing health insurance costs. For example, how do insurance costs differ between smokers and non-smokers? What is the impact of age, gender, BMI, etc., on insurance costs? This dataset can help answer such questions and assist in predicting approximate health insurance costs.
 
 ---
 
