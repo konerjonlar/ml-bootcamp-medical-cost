@@ -13,8 +13,64 @@ This project aims to estimate the approximate cost of a person's health insuranc
 2. Follow the step-by-step instructions to analyze the data, preprocess it, select and train regression models, optimize hyperparameters, and evaluate the models.
 3. Run each cell in the notebook to execute the code and see the results.
 
-## Data Set
+## Description For Each Library/Module
+- **Pandas**: 
+  Used for data analysis and manipulation.
+  - `pd.read_csv()`: Used to read CSV files and create DataFrames.
+  - DataFrame: Data structure representing data in a tabular format with columns and rows.
+  - Series: One-dimensional array representing a column in a DataFrame.
+
+- **Numpy**:
+  Used for numerical computations and array manipulations.
+  - `np.array()`: Used to create NumPy arrays that represent vectors and matrices.
+
+- **Seaborn**:
+  Used for data visualization.
+  - `sns.countplot()`: Used to visualize the count of categorical data.
+
+- **Matplotlib.Pyplot**:
+  Used for plotting graphs.
+  - `plt.figure()`: Creates a new plot figure.
+  - `plt.title()`: Sets the title of the plot.
+  - `plt.xlabel()`: Sets the label for the X-axis.
+  - `plt.ylabel()`: Sets the label for the Y-axis.
+  - `plt.legend()`: Adds legends to the plot.
+
+- **Sklearn.Model_Selection**:
+  Used for model training and validation.
+  - `train_test_split()`: Splits data into training and testing sets.
+
+- **Sklearn.Preprocessing**:
+  Used for data preprocessing and scaling.
+  - `LabelEncoder()`: Converts categorical data into numerical values.
+  - `OneHotEncoder()`: Converts categorical data using one-hot encoding.
+  - `StandardScaler()`: Scales and standardizes data.
+
+- **Sklearn.Linear_Model**:
+  Contains classes for linear regression models.
+  - `LinearRegression()`: Creates a simple linear regression model.
+
+- **Sklearn.Ensemble**:
+  Contains classes for ensemble models.
+  - `RandomForestRegressor()`: Creates a random forest regression model.
+
+- **Sklearn.Svm**:
+  Contains classes for Support Vector Machines (SVM) models.
+  - `SVR()`: Creates a support vector regression model.
+
+- **Sklearn.Metrics**:
+  Used for evaluating model performance.
+  - `mean_squared_error()`: Calculates Mean Squared Error (MSE).
+  - `mean_absolute_error()`: Calculates Mean Absolute Error (MAE).
+
+- **Sklearn.Model_Selection**:
+  Used for model selection and validation.
+  - `cross_val_score()`: Evaluates model performance using cross-validation.
+
+    
+## Dataset 
 The dataset used in this project (`insurance.csv`) contains information about individuals including age, sex, BMI, children, smoker status, region, and insurance charges.
+
 
 ## Dataset Information
 
