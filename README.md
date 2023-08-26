@@ -200,7 +200,7 @@ This dataset can be used to understand and analyze factors influencing health in
 ---
 
 ## Authors
-- [orhan cansu](https://github.com/konerjonlar)
+- [Orhan Cansu](https://www.linkedin.com/in/orhan-cansu/)
 - [Meryem Arslan](https://github.com/mrymarsln)
 - [Murat Rüzgar Deniz](https://github.com/Ruzgarte)
 
