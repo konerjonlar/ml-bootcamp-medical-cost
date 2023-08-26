@@ -124,9 +124,9 @@ This dataset can be used to understand and analyze factors influencing health in
 ---
 
 ## Authors
-- Orhan Cansu 
-- Meryem Arslan
-- Murat Rüzgar Deniz
+- [orhan cansu](https://github.com/konerjonlar)
+- [Meryem Arslan](https://github.com/mrymarsln)
+- [Murat Rüzgar Deniz](https://github.com/Ruzgarte)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
