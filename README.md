@@ -29,23 +29,11 @@ The dataset used in this project (`insurance.csv`) contains information about in
 
 ## Data Exploration and Analysis
 
-
-**Display Columns:**
-
-|     |      age |       bmi |   children |      charges |    sex   |     smoker   |    region   |
-|:---:| --------:| ---------:| ----------:| -----------:| --------:| ---------:| ----------:|
-
 **Data Size:**
 This indicates the dimensions of the dataset, where it has 1338 rows and 7 columns.
 
 **Data Types:**
 It shows the data types of each column. For example, 'age' and 'children' are represented as integers, while 'sex', 'smoker', and 'region' are represented as objects (likely strings), and 'bmi' and 'charges' are represented as floating-point numbers.
-
-**First 10 Rows:**
-This part provides the first 10 rows of the dataset, showcasing the values for each feature. For instance, the first entry is a 19-year-old female with a BMI of 27.900, no children, being a smoker, residing in the southwest region, and having charges of 16884.92400.
-
-**Last 4 Rows:**
-Similarly, this section displays the last 4 rows of the dataset, showing information about the individuals in the final rows.
 
 **Total Null Values:**
 It states that there are no missing values (null values) in the dataset.
@@ -135,109 +123,8 @@ This dataset can be used to understand and analyze factors influencing health in
 
 ---
 
-## "insurance.csv" Usage Guide
-
-This guide demonstrates step-by-step how to perform basic data analysis using the "insurance.csv" dataset.
-
-### Step 1: Loading the Dataset
-
-1. Firstly, ensure that you have a Python environment set up to use the Python programming language.
-2. Download the "insurance.csv" dataset and save it to a specific folder.
-3. Import the necessary Python libraries:
-
-```python
-import pandas as pd
-```
-
-4. Load the dataset:
-
-```python
-data = pd.read_csv("insurance.csv")
-```
-
-### Step 2: Exploring the Dataset
-
-1. To see the first few rows of the dataset:
-
-```python
-print(data.head())
-```
-
-2. To view the columns and data types of the dataset:
-
-```python
-print(data.info())
-```
-
-3. To obtain summary statistics of the dataset:
-
-```python
-print(data.describe())
-```
-
-### Step 3: Basic Data Analysis
-
-1. To examine the distribution of the "BMI" column:
-
-```python
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-plt.figure(figsize=(10, 6))
-sns.histplot(data['bmi'], bins=20, kde=True)
-plt.title('BMI Distribution')
-plt.xlabel('BMI')
-plt.ylabel('Frequency')
-plt.show()
-```
-
-2. To investigate the relationship between "smoker" individuals and "charges":
-
-```python
-plt.figure(figsize=(10, 6))
-sns.scatterplot(x='charges', y='smoker', data=data)
-plt.title('Smoker and Charges Relationship')
-plt.xlabel('Charges')
-plt.ylabel('Smoker (0: No, 1: Yes)')
-plt.show()
-```
-
-3. To explore the relationship between "smoker" and "region":
-
-```python
-plt.figure(figsize=(10, 6))
-sns.countplot(x='region', hue='smoker', data=data)
-plt.title('Smoker Status and Regions')
-plt.xlabel('Region')
-plt.ylabel('Number of Individuals')
-plt.legend(title='Smoker')
-plt.show()
-```
-
-4. To analyze the relationship between "BMI" and "sex":
-
-```python
-plt.figure(figsize=(10, 6))
-sns.boxplot(x='sex', y='bmi', data=data)
-plt.title('BMI and Sex Relationship')
-plt.xlabel('Sex')
-plt.ylabel('BMI')
-plt.show()
-```
-
-5. To determine the region with the most children:
-
-```python
-most_children_region = data.groupby('region')['children'].sum().idxmax()
-print(f'Region with the most children: {most_children_region}')
-```
-
-By following these steps, you can load, explore, and perform basic data analysis on the "insurance.csv" dataset. This guide can serve as a starting point for better understanding your dataset and uncovering important features.
-
----
-
 ## Authors
-- Orhan Cansu
+- Orhan Cansu 
 - Meryem Arslan
 - Murat Rüzgar Deniz
 
